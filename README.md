@@ -1,0 +1,2 @@
+# djangoground
+Django Scratchpad
