@@ -82,6 +82,9 @@
         <p>{{ post.content }}</p>
         <hr>
 
+        {% if post.file_upload %}
+          <a href="{{ post.file_upload.url }}" class="btn btn-outline-dark" role="button" download>DOWNLOAD</a><span>{{post.get_file_name}}</span>
+        {% endif %}
         <!-- Comments Form -->
         <div class="card my-4">
           <h5 class="card-header">Leave a Comment:</h5>
