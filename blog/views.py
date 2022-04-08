@@ -5,11 +5,10 @@ from .models import Post
 
 class PostList(ListView):
   model=Post
-  template_name = 'blog/index.html'
 
 class PostDetail(DetailView):
   model=Post
-  
+
 #def index(request): 
 #  posts = Post.objects.all().order_by('-pk')
 #  return render(
